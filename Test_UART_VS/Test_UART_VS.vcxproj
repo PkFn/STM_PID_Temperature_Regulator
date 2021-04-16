@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{60F5295B-4844-479A-A843-F3ED8DE697E3}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
+    <BSP_VERSION>2021.02</BSP_VERSION>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\My_Sources;..\Test_UART_Project\Core\Inc;..\Test_UART_Project\Drivers\CMSIS\Device\ST\STM32G0xx\Include;..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc;..\Test_UART_Project\Drivers\CMSIS\Include;..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy;../My_Sources/bsp;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>flash_layout;STM32G071xx;DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Test_UART_Project\Core\Inc;..\Test_UART_Project\Drivers\CMSIS\Device\ST\STM32G0xx\Include;..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc;..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>flash_layout;STM32G071xx;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\My_Sources\bsp\pins.cpp" />
+    <ClCompile Include="..\My_Sources\Program.cpp" />
+    <ClCompile Include="..\My_Sources\uart\uart_print.c" />
+    <ClCompile Include="..\Test_UART_Project\Core\Src\stm32g0xx_it.c" />
+    <ClCompile Include="..\Test_UART_Project\Core\Src\stm32g0xx_hal_msp.c" />
+    <ClCompile Include="..\Test_UART_Project\Core\Src\main.c" />
+    <ClCompile Include="..\Test_UART_Project\Core\Src\system_stm32g0xx.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_tim.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_tim_ex.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c" />
+    <ClInclude Include="..\My_Sources\bsp\pins.h" />
+    <ClInclude Include="..\My_Sources\Program.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_dma.h" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_dma.c" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_dmamux.h" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" />
+    <ClCompile Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" />
+    <None Include="stm32.props" />
+    <ClCompile Include="$(BSP_ROOT)\STM32G0xxxx\StartupFiles\startup_stm32g071xx.c" />
+    <ClInclude Include="..\Test_UART_Project\Core\Inc\stm32g0xx_it.h" />
+    <ClInclude Include="..\Test_UART_Project\Core\Inc\stm32g0xx_hal_conf.h" />
+    <ClInclude Include="..\Test_UART_Project\Core\Inc\main.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc_ex.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_rcc.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_cortex.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_uart.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_uart_ex.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma_ex.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ramfunc.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio.h" />
+    <ClInclude Include="..\Test_UART_Project\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio_ex.h" />
+    <None Include="Test_UART_VS-Debug.vgdbsettings" />
+    <None Include="Test_UART_VS-Release.vgdbsettings" />
+    <None Include="stm32.xml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,113 @@
+VisualGDB/Debug/_1_/Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o: \
+ C:/Users/SicH/Documents/CMX/Projects/Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h \
+ ../Test_UART_Project/Core/Inc/stm32g0xx_hal_conf.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h \
+ ../Test_UART_Project/Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h \
+ ../Test_UART_Project/Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h \
+ ../Test_UART_Project/Drivers/CMSIS/Include/core_cm0plus.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_default_types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h \
+ ../Test_UART_Project/Drivers/CMSIS/Include/cmsis_version.h \
+ ../Test_UART_Project/Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Test_UART_Project/Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Test_UART_Project/Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Test_UART_Project/Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stddef.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h \
+ ../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:
+
+../Test_UART_Project/Core/Inc/stm32g0xx_hal_conf.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h:
+
+../Test_UART_Project/Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h:
+
+../Test_UART_Project/Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h:
+
+../Test_UART_Project/Drivers/CMSIS/Include/core_cm0plus.h:
+
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stdint.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_default_types.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h:
+
+../Test_UART_Project/Drivers/CMSIS/Include/cmsis_version.h:
+
+../Test_UART_Project/Drivers/CMSIS/Include/cmsis_compiler.h:
+
+../Test_UART_Project/Drivers/CMSIS/Include/cmsis_gcc.h:
+
+../Test_UART_Project/Drivers/CMSIS/Include/mpu_armv7.h:
+
+../Test_UART_Project/Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stddef.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:
+
+../Test_UART_Project/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:
